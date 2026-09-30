@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yaabu-sh <yaabu-sh@student.42amman.com>    +#+  +:+       +#+        */
+/*   By: yaabu-sh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/30 17:30:19 by yaabu-sh          #+#    #+#             */
-/*   Updated: 2026/09/30 17:31:01 by yaabu-sh         ###   ########.fr       */
+/*   Created: 2026/09/30 19:07:56 by yaabu-sh          #+#    #+#             */
+/*   Updated: 2026/09/30 19:08:04 by yaabu-sh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-int	ft_tolower(int c)
+char	*ft_strchr(const char *s, int c)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (c + 32);
-	else
-		return (c);
+	while (*s)
+	{
+		if (*s == (char)c)
+			return ((char *)s);
+		s++;
+	}
+	if ((char)c == '\0')
+		return ((char *)s);
+	return (NULL);
 }
-/*int	main(void)
-{
-	printf("%c\n", ft_tolower('A')); // 'a'
-	return (0);
-}*/

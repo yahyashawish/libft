@@ -1,35 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yaabu-sh <yaabu-sh@student.42amman.com>    +#+  +:+       +#+        */
+/*   By: yaabu-sh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/30 17:30:11 by yaabu-sh          #+#    #+#             */
-/*   Updated: 2026/09/30 17:30:58 by yaabu-sh         ###   ########.fr       */
+/*   Created: 2026/09/30 19:12:51 by yaabu-sh          #+#    #+#             */
+/*   Updated: 2026/09/30 19:13:14 by yaabu-sh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
+#include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t	i;
+	const unsigned char	*p1;
+	const unsigned char	*p2;
+	size_t				i;
 
+	p1 = (const unsigned char *)s1;
+	p2 = (const unsigned char *)s2;
 	i = 0;
 	while (i < n)
 	{
-		if ((s1[i] != s2[i]) || s1[i] == '\0')
-			return (s1[i] - s2[i]);
+		if (p1[i] != p2[i])
+			return (p1[i] - p2[i]);
 		i++;
 	}
 	return (0);
 }
-
-/*int	main(void)
-{
-	char s1[] = "Yahya";
-	char s2[] = "yahya";
-	int n=4;
-	printf("%d\n", ft_strncmp(s1,s2,n));
-}*/
