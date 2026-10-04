@@ -6,11 +6,11 @@
 /*   By: yaabu-sh <yaabu-sh@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/30 17:30:07 by yaabu-sh          #+#    #+#             */
-/*   Updated: 2026/09/30 17:30:57 by yaabu-sh         ###   ########.fr       */
+/*   Updated: 2026/10/04 17:02:13 by yaabu-sh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *str)
 {
@@ -21,9 +21,3 @@ size_t	ft_strlen(const char *str)
 		i++;
 	return (i);
 }
-
-/*int	main(void)
-{
-	char *str = "yahya";
-	printf("%d\n",ft_strlen(str));
-}*/

@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yaabu-sh <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: yaabu-sh <yaabu-sh@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/30 19:01:18 by yaabu-sh          #+#    #+#             */
-/*   Updated: 2026/09/30 19:07:00 by yaabu-sh         ###   ########.fr       */
+/*   Created: 2026/09/30 19:43:24 by yaabu-sh          #+#    #+#             */
+/*   Updated: 2026/09/30 19:44:01 by yaabu-sh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

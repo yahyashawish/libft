@@ -6,11 +6,10 @@
 /*   By: yaabu-sh <yaabu-sh@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/30 17:30:14 by yaabu-sh          #+#    #+#             */
-/*   Updated: 2026/09/30 19:18:46 by yaabu-sh         ###   ########.fr       */
+/*   Updated: 2026/10/04 17:07:01 by yaabu-sh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
 #include "libft.h"
 
 char	*ft_strstr(char *big, char *little, size_t len)
@@ -35,16 +34,3 @@ char	*ft_strstr(char *big, char *little, size_t len)
 	}
 	return (0);
 }
-
-/*int	main(void)
-{
-	char *str = "hello world";
-	char *to_find = "world";
-	char *result = ft_strstr(str, to_find,11);
-	if(result != NULL)
-	printf("%s\n",result);
-	else
-	printf("not found");
-
-
-}*/

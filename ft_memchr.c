@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yaabu-sh <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: yaabu-sh <yaabu-sh@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/30 19:10:45 by yaabu-sh          #+#    #+#             */
-/*   Updated: 2026/09/30 19:11:56 by yaabu-sh         ###   ########.fr       */
+/*   Created: 2026/09/30 19:43:00 by yaabu-sh          #+#    #+#             */
+/*   Updated: 2026/09/30 19:44:01 by yaabu-sh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,19 +28,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-
-int	main(void)
-{
-
-		char str[] = "yahya zakaria ";
-		char *res1 = ft_memchr(str, 'z', 11);
-		//char *res2 = memchr(str, 'y', 11);
-		if (res1 != NULL)
-			printf("ft_memchr %ld\n", res1 - str);
-		else
-			printf("ft_memchr %d\n" , -1);
-
-}*/

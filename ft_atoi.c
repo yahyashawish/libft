@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <unistd.h>
-//#include <stdio.h>
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {
@@ -37,9 +36,3 @@ int	ft_atoi(const char *str)
 	}
 	return (sign * result);
 }
-
-/*int	main(void)
-{
-	char str[] = "  -42abc";
-	printf("%d\n",ft_atoi(str));
-}*/

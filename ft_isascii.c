@@ -6,11 +6,11 @@
 /*   By: yaabu-sh <yaabu-sh@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/30 17:29:32 by yaabu-sh          #+#    #+#             */
-/*   Updated: 2026/09/30 17:30:54 by yaabu-sh         ###   ########.fr       */
+/*   Updated: 2026/10/04 17:04:15 by yaabu-sh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
+#include "libft.h"
 
 int	ft_isascii(int c)
 {
@@ -19,10 +19,3 @@ int	ft_isascii(int c)
 	else
 		return (0);
 }
-
-/*int	main(void)
-{
-	printf("%d\n", ft_isascii(65));  // 1 (Valid ASCII)
-	printf("%d\n", ft_isascii(200)); // 0 (Out of range)
-	return (0);
-}*/

@@ -3,49 +3,30 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yaabu-sh <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: yaabu-sh <yaabu-sh@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/30 17:41:26 by yaabu-sh          #+#    #+#             */
-/*   Updated: 2026/09/30 19:20:25 by yaabu-sh         ###   ########.fr       */
+/*   Created: 2026/09/30 19:43:16 by yaabu-sh          #+#    #+#             */
+/*   Updated: 2026/10/04 17:14:58 by yaabu-sh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned char		*d;
-	unsigned const char	*s;
+	const unsigned char	*s;
+	size_t				i;
 
-	if (!dest && !src)
-		return (dest);
-	if (n == 0 || (dest == src))
-		return (dest);
 	d = (unsigned char *)dest;
-	s = (unsigned const char *)src;
-	while (n != 0)
+	s = (const unsigned char *)src;
+	i = 0;
+	if (d == NULL && s == NULL)
+		return (NULL);
+	while (i < n)
 	{
-		if (*d != *s)
-			*d = *s;
-		d++;
-		s++;
-		n--;
+		d[i] = s[i];
+		i++;
 	}
 	return (dest);
 }
-
-//#include <string.h>
-
-/*int	main(void)
-{
-	unsigned char	dest[10];
-	unsigned char	src[];
-	unsigned char	src1[];
-
-	src[] = "mhmd";
-	src1[] = "zaid";
-	ft_memcpy(dest, src, 5);
-	printf("%s", dest);
-	memcpy(dest, src, 5);
-	printf("%s", dest);
-}*/
